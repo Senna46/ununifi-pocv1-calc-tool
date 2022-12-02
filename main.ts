@@ -37,6 +37,7 @@ getTxs("list_nft")
     if (!txs) {
       return;
     }
+    console.log("total_list", txs.length);
     for (const tx of txs) {
       if (tx.body && tx.body.messages) {
         for (const msg of tx.body.messages) {
@@ -77,6 +78,7 @@ getTxs("list_nft")
         if (!txs) {
           return;
         }
+        console.log("total_bid", txs.length);
         for (const tx of txs) {
           if (tx.body && tx.body.messages) {
             for (const msg of tx.body.messages) {
